@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Trivia_Admin' target in the 'Trivia_Admin' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

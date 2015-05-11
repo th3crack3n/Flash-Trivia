@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.project309.flashtriviachallenge"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Loading"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.project309.flashtriviachallenge" />
+        </activity>
+        <activity
+            android:name=".HomeScreen"
+            android:label="@string/title_activity_home_screen"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.project309.flashtriviachallenge.Loading" />
+        </activity>
+        <activity
+            android:name=".QuickPlay"
+            android:label="@string/title_activity_quick_play"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.project309.flashtriviachallenge.HomeScreen" />
+        </activity>
+        <activity
+            android:name=".CustomGame"
+            android:label="@string/title_activity_custom_game"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.project309.flashtrivachallenge.HomeScreen" />
+        </activity>
+        <activity
+            android:name=".MyProfile"
+            android:label="@string/title_activity_my_profile"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.project309.flashtriviachallenge.HomeScreen" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.project309.flashtriviachallenge.HomeScreen" />
+        </activity>
+        <activity
+            android:name=".FriendsList"
+            android:label="@string/title_activity_friends_list"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.project309.FlashTriviaChallenge.HomeScreen" />
+        </activity>
+        <activity
+            android:name=".HighScores"
+            android:label="@string/title_activity_high_scores"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.project309.flashtriviachallenge.HomeScreen" />
+        </activity>
+        <activity
+            android:name=".Info"
+            android:label="@string/title_activity_info"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.project309.flashtriviachallenge.HomeScreen" />
+        </activity>
+        <activity
+            android:name=".Help"
+            android:label="@string/title_activity_help"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.project309.flashtriviachallenge.Info" />
+        </activity>
+        <activity
+            android:name=".AppVersion"
+            android:label="@string/title_activity_app_version"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.project309.flashtriviachallenge.Info" />
+        </activity>
+        <activity
+            android:name=".ContactUs"
+            android:label="@string/title_activity_contact_us"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.project309.flashtriviachallenge.Info" />
+        </activity>
+        <activity
+            android:name=".InviteFriends"
+            android:label="@string/title_activity_invite_friends"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Gaming"
+            android:label="@string/title_activity_gaming"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ScoreScreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".UsersList"
+            android:label="@string/title_activity_users_list"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".OtherProfile"
+            android:label="@string/title_activity_other_profile" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+</manifest>

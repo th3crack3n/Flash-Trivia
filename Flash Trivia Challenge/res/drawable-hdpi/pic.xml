@@ -1,0 +1,5 @@
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:maxLevel = "4" android:drawable = "@drawable/cry_face" />
+    <item android:maxLevel = "14" android:drawable = "@drawable/peace_face" />
+    <item android:maxLevel = "24" android:drawable = "@drawable/smell_face" />
+</level-list>

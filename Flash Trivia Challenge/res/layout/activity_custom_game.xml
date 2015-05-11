@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <Button
+        android:id="@+id/History"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/history" />
+
+    <Button
+        android:id="@+id/Sports"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignBaseline="@+id/History"
+        android:layout_alignBottom="@+id/History"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="45dp"
+        android:background="@drawable/sports" />
+
+    <Button
+        android:id="@+id/Movies"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/History"
+        android:layout_centerVertical="true"
+        android:background="@drawable/movie" />
+
+    <Button
+        android:id="@+id/Music"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignBaseline="@+id/Movies"
+        android:layout_alignBottom="@+id/Movies"
+        android:layout_alignLeft="@+id/Sports"
+        android:background="@drawable/music" />
+
+    <Button
+        android:id="@+id/Geography"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/Music"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="37dp"
+        android:background="@drawable/geography" />
+
+    <Button
+        android:id="@+id/Technology"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignBaseline="@+id/Geography"
+        android:layout_alignBottom="@+id/Geography"
+        android:layout_alignLeft="@+id/Movies"
+        android:background="@drawable/technology" />
+
+</RelativeLayout>

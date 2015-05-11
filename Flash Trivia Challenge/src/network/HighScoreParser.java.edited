@@ -1,0 +1,111 @@
+package network;
+
+
+import java.util.Scanner;
+
+import android.widget.TextView;
+
+
+public class HighScoreParser extends Request{
+	
+	TextView ID,DScore,WScore;
+	
+	public HighScoreParser(TextView id,TextView dailyScore,TextView weeklyScore)
+	{
+		ID = id;
+		DScore = dailyScore;
+		WScore = weeklyScore;
+	}
+	
+<<<<<<< .mine
+	public HighScoreParser() {
+		// TODO Auto-generated constructor stub
+	}
+
+=======
+	
+>>>>>>> .r131
+	public String IdParser(String response)
+	{
+		Scanner scan = new Scanner(response);
+		int id = 0;
+		String sub ="";
+		while(scan.hasNextLine())
+		{
+			String line = scan.nextLine();
+			if(line.startsWith("id",3))
+			{	
+				for(int i =0;i<line.length();i++)
+				{
+					if('0'<=line.charAt(i) && line.charAt(i)<='9')
+					{
+						sub += line.charAt(i);
+					}
+				}
+
+			}
+		}
+			id = Integer.parseInt(sub);
+		return id+"";
+	}
+	
+	
+	public String DailyScoreParser(String response)
+	{
+		Scanner scan = new Scanner(response);
+		int dailyScore = 0;
+		String sub ="";
+		while(scan.hasNextLine())
+		{
+			String line = scan.nextLine();
+			if(line.startsWith("daily",3))
+			{	
+				for(int i =0;i<line.length();i++)
+				{
+					if('0'<=line.charAt(i) && line.charAt(i)<='9')
+					{
+						sub += line.charAt(i);
+					}
+				}
+
+			}
+		}
+			dailyScore = Integer.parseInt(sub);
+		return dailyScore+"";
+	}
+
+
+		
+	public String WeeklyScoreParser(String response)
+	{
+		Scanner scan = new Scanner(response);
+		int weeklyScore = 0;
+		String sub ="";
+		while(scan.hasNextLine())
+		{
+			String line = scan.nextLine();
+			if(line.startsWith("weekly",3))
+			{	
+				for(int i =0;i<line.length();i++)
+				{
+					if('0'<=line.charAt(i) && line.charAt(i)<='9')
+					{
+						sub += line.charAt(i);
+					}
+				}
+
+			}
+		}
+			weeklyScore = Integer.parseInt(sub);
+		return weeklyScore+"";
+	}
+	
+	@Override
+	protected void onPostExecute(String text)
+	{
+		ID.setText(this.IdParser(text));
+		DScore.setText(this.DailyScoreParser(text));
+		WScore.setText(this.WeeklyScoreParser(text));
+	}
+	
+}

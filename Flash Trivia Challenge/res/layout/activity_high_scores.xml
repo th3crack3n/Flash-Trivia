@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="High Scores"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/Top_D_scores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/tableLayout1"
+        android:text="@string/Top_D_scores"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="44dp"
+        android:background="#000000"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:layout_margin="2dp"
+            android:background="#FFFFFF" >
+
+            <TextView android:text="Player" />
+
+            <TextView android:text="DailyScore" />
+
+            <TextView android:text="WeeklyScore" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/Top_ids"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/Top_D_scores"
+        android:text="@string/Top_ids"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/Top_W_scores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tableLayout1"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="@string/Top_W_scores"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

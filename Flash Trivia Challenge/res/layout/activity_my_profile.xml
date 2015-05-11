@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="1dp" >
+
+    <ImageView
+        android:id="@+id/ProfilePic"
+        android:layout_width="90dp"
+        android:layout_height="100dp"
+        android:layout_marginTop = "30dp"
+        android:layout_marginLeft = "10dp"
+        android:clickable="true" 
+        android:src="@drawable/user_pic" />/>
+
+    <EditText
+        android:id="@+id/editUsername"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop = "190dp"
+        android:layout_marginLeft = "10dp"
+        android:ems="10"
+        android:hint="Edit Username." >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/buttonEnter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop = "180dp"
+        android:layout_marginLeft="200dp"
+        android:text="Enter" />
+
+    <TextView
+        android:id="@+id/usernameProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="160dp"
+        android:text="Username"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/daily"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="80dp"
+        android:text="@string/daily"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/weekly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/daily"
+        android:layout_alignLeft="@+id/daily"
+        android:layout_marginBottom="30dp"
+        android:text="@string/weekly"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/weeklyscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/weekly"
+        android:layout_alignBottom="@+id/weekly"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/weekly"
+        android:text="@string/weeklyscore"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/dailyscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/daily"
+        android:layout_alignBottom="@+id/daily"
+        android:layout_alignLeft="@+id/weeklyscore"
+        android:text="@string/dailyscore"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
